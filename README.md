@@ -1,24 +1,29 @@
 # cocktails-vue
+My very first Vue Project is Cocktail bar. I practised my skills by creating cocktails list, which calls TheCocktailDB. Also, I created a search bar to help to find cocktails by an ingredient or cocktail's name. 
 
 ## Project setup
 ```
-npm install
+- git clone
+- cd cocktails-vue
+- npm install
+- npm run serve
 ```
+## Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+When you open the app it will show you all available cocktails. 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+If you click 'view recipe' button, the back of the card will show you the recipe. To get to the front of the card click 'back' button. 
 
-### Lints and fixes files
-```
-npm run lint
-```
+Also you can search cocktails by an ingredient or a name of a cocktail.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies
+
+- Vue
+- TheCocktailDB
+- Axios
+- FontAwesomeIcon
+- Vue Testing Library
+
+## Author
+
+Viktoriia Petrova
