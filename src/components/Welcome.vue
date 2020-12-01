@@ -13,16 +13,24 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-    .welcome {
-        display: flex;
-    }
+  .welcome {
+      display: flex;
+  }
 
+  #cocktailBarText {
+      color: rgba(0, 0, 0, 0.568);
+      text-shadow: 2px 2px 2px white;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 3em;
+      padding: 0.5em;
+      margin: auto;
+  }
+
+/* media queries */
+
+  @media only screen and (max-width: 425px){
     #cocktailBarText {
-        color: rgba(0, 0, 0, 0.568);
-        text-shadow: 2px 2px 2px white;
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 3em;
-        padding: 0.5em;
-        margin: auto;
+      font-size: 2em;
     }
+  }
 </style>

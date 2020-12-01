@@ -1,10 +1,10 @@
 <template>
     <!-- container for eachindividual cocktail -->
-    <div>
+    <div id="cocktail-container">
         <!-- initial rendereng of cocktails list -->
         <div v-if="!isViewing" class="each-cocktail">
             <div class="title">{{cocktail.strDrink}}</div>
-            <img class="img-cocktail " :src="`${cocktail.strDrinkThumb}`">
+            <img class="img-cocktail" :src="`${cocktail.strDrinkThumb}`">
             <div class="ingredients-container">
                 <!-- rendering only ingredients which have a value -->
                 <div v-if="cocktail.strIngredient1 !== null">{{cocktail.strIngredient1}}</div>
@@ -156,4 +156,55 @@ export default {
   #instructions-container {
       margin-bottom: 0.5em;
   }
+
+    #cocktail-container {
+        display: flex;
+        justify-content: center;
+    }
+
+/* media queries */
+    @media only screen and (max-width: 500px){
+        #cocktail-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .each-cocktail {
+        width: 16em;
+        height: 17.5em;
+        margin: 0.5em;
+        }
+
+        .img-cocktail {
+        width: 106px;
+        height: 106px;
+        }
+    }
+
+  @media only screen and (max-width: 400px){
+
+    .each-cocktail {
+      width: 82%;
+      height: 17.5em;
+      margin: 0.5em;
+    }
+
+    .img-cocktail {
+      width: 106px;
+      height: 106px;
+    }
+  }
+
+    @media only screen and (max-width: 350px){
+        .each-cocktail {
+            width: 90%;
+            height: 17.5em;
+            margin: 0.5em;
+        }
+
+        .img-cocktail {
+            width: 100px;
+            height: 100px;
+        }
+    }
 </style>

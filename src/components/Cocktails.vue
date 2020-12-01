@@ -14,7 +14,7 @@
           placeholder="Search"
       />
     </div>
-    <div id="cocktails-menu">
+    <div id="cocktails-menu" data-testid="cocktails-menu">
       <!-- looping through checkName, array of cocktails modified by the keyword, to pass each cocktail to individual card  -->
       <div v-bind:key="cocktail.idDrink" v-for="cocktail in checkName">
         <EachCocktail v-bind:cocktail="cocktail" />
@@ -100,7 +100,7 @@ export default {
   .search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    margin: 0 0.5em 2em 0.5em;
     padding: 0.5em;
     border: 0.2em groove rgba(0, 0, 0, 0.521);
     border-radius: 6px;
@@ -117,5 +117,79 @@ export default {
   #cocktail-search-label {
     font-size: 1.2em;
     margin-right: 0.3em;
+  }
+
+  /* media queries */
+  @media only screen and (min-width: 2500px){
+    #cocktails-menu {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .search-bar {
+      padding: 0.7em;
+      font-size: 2em;
+    }
+
+    #cocktail-search {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    #cocktails-menu {
+      grid-template-columns: 1fr 1fr;
+      width: 66%;
+      border: 0.9em groove rgba(0, 0, 0, 0.301);
+    }
+  }
+
+  @media only screen and (max-width: 1000px){
+    #cocktails-menu {
+      width: 75%;
+      border: 0.7em groove rgba(0, 0, 0, 0.301);
+    }
+  }
+
+  @media only screen and (max-width: 900px){
+    #cocktails-menu {
+      width: 85%;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    #cocktails-menu {
+      width: 92%;
+    }
+  }
+
+  @media only screen and (max-width: 705px){
+    .search-bar {
+      display: flex;
+      flex-direction: column;
+      width: 88%;
+    }
+
+    #cocktails-menu {
+      grid-template-columns: 1fr;
+      width: 89%;
+      border: 0.4em groove rgba(0, 0, 0, 0.301);
+    }
+
+    #cocktail-search-label {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 425px){
+    #cocktail-search-label {
+      font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (max-width: 380px){
+    #cocktail-search-label {
+      font-size: 0.6em;
+      margin-bottom: 0.5em;
+    }
   }
 </style>
