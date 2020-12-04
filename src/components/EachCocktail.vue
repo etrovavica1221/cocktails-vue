@@ -134,6 +134,7 @@ export default {
 /* each-cocktail scroll */
 
     .each-cocktail {
+        -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scrollbar-color: rgba(170, 166, 166, 0.301) rgba(10, 22, 22, 0.705);
   }
@@ -153,7 +154,7 @@ export default {
     border-radius: 20px;
     border: 3px solid rgba(170, 166, 166, 0.301);
   }
-  
+
 
   .ingredients-container {
       margin: 0.5em auto;
