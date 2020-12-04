@@ -113,8 +113,10 @@ export default {
 /*recipe scroll*/
 
   #recipe-container {
-      scrollbar-width: thin;
-        scrollbar-color: rgba(170, 166, 166, 0.301) rgba(16, 230, 219, 0.705);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(170, 166, 166, 0.301) rgba(16, 230, 219, 0.705);
   }
 
  /* Works on Chrome/Edge/Safari */
@@ -134,6 +136,7 @@ export default {
 /* each-cocktail scroll */
 
     .each-cocktail {
+        overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scrollbar-color: rgba(170, 166, 166, 0.301) rgba(10, 22, 22, 0.705);
