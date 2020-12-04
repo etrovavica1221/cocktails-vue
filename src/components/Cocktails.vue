@@ -80,6 +80,7 @@ export default {
   }
 
   * {
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: rgba(170, 166, 166, 0.301) rgba(16, 230, 219, 0.705);
   }
