@@ -7,14 +7,14 @@
             <img class="img-cocktail" :src="`${cocktail.strDrinkThumb}`">
             <div class="ingredients-container">
                 <!-- rendering only ingredients which have a value -->
-                <div v-if="cocktail.strIngredient1 !== null">{{cocktail.strIngredient1}}</div>
-                <div v-if="cocktail.strIngredient2 !== null">{{cocktail.strIngredient2}}</div>
-                <div v-if="cocktail.strIngredient3 !== null">{{cocktail.strIngredient3}}</div>
-                <div v-if="cocktail.strIngredient4 !== null">{{cocktail.strIngredient4}}</div>
-                <div v-if="cocktail.strIngredient5 !== null">{{cocktail.strIngredient5}}</div>
-                <div v-if="cocktail.strIngredient6 !== null">{{cocktail.strIngredient6}}</div>
-                <div v-if="cocktail.strIngredient7 !== null">{{cocktail.strIngredient7}}</div>
-                <div v-if="cocktail.strIngredient8 !== null">{{cocktail.strIngredient8}}</div>
+                <div v-if="cocktail.strIngredient1 !== null">⭐{{cocktail.strIngredient1}}</div>
+                <div v-if="cocktail.strIngredient2 !== null">⭐{{cocktail.strIngredient2}}</div>
+                <div v-if="cocktail.strIngredient3 !== null">⭐{{cocktail.strIngredient3}}</div>
+                <div v-if="cocktail.strIngredient4 !== null">⭐{{cocktail.strIngredient4}}</div>
+                <div v-if="cocktail.strIngredient5 !== null">⭐{{cocktail.strIngredient5}}</div>
+                <div v-if="cocktail.strIngredient6 !== null">⭐{{cocktail.strIngredient6}}</div>
+                <div v-if="cocktail.strIngredient7 !== null">⭐{{cocktail.strIngredient7}}</div>
+                <div v-if="cocktail.strIngredient8 !== null">⭐{{cocktail.strIngredient8}}</div>
             </div>
             <button id="recipe-btn" class="viewCocktail-btn" @click="toggleViewing">View recipe</button>
         </div>
@@ -24,14 +24,14 @@
             <div class="title">{{cocktail.strDrink}}</div>
             <div class="ingredients-container">
                 <h1 id="ingredients-header">Ingredients:</h1>
-                <div v-if="cocktail.strIngredient1 !== null">{{cocktail.strIngredient1}}</div>
-                <div v-if="cocktail.strIngredient2 !== null">{{cocktail.strIngredient2}}</div>
-                <div v-if="cocktail.strIngredient3 !== null">{{cocktail.strIngredient3}}</div>
-                <div v-if="cocktail.strIngredient4 !== null">{{cocktail.strIngredient4}}</div>
-                <div v-if="cocktail.strIngredient5 !== null">{{cocktail.strIngredient5}}</div>
-                <div v-if="cocktail.strIngredient6 !== null">{{cocktail.strIngredient6}}</div>
-                <div v-if="cocktail.strIngredient7 !== null">{{cocktail.strIngredient7}}</div>
-                <div v-if="cocktail.strIngredient8 !== null">{{cocktail.strIngredient8}}</div>
+                <div v-if="cocktail.strIngredient1 !== null">⭐{{cocktail.strIngredient1}}</div>
+                <div v-if="cocktail.strIngredient2 !== null">⭐{{cocktail.strIngredient2}}</div>
+                <div v-if="cocktail.strIngredient3 !== null">⭐{{cocktail.strIngredient3}}</div>
+                <div v-if="cocktail.strIngredient4 !== null">⭐{{cocktail.strIngredient4}}</div>
+                <div v-if="cocktail.strIngredient5 !== null">⭐{{cocktail.strIngredient5}}</div>
+                <div v-if="cocktail.strIngredient6 !== null">⭐{{cocktail.strIngredient6}}</div>
+                <div v-if="cocktail.strIngredient7 !== null">⭐{{cocktail.strIngredient7}}</div>
+                <div v-if="cocktail.strIngredient8 !== null">⭐{{cocktail.strIngredient8}}</div>
             </div>
             <div id="instructions-container">
                 {{cocktail.strInstructions}}
@@ -69,7 +69,7 @@ export default {
     align-items: center;
     text-align: center;
     width: 16em;
-    height: 19.5em;
+    height: 23em;
     margin: 1em;
     background-color: rgba(233, 222, 222, 0.13);
     border: ridge 5px rgba(255, 255, 255, 0.514);
@@ -102,6 +102,20 @@ export default {
   scrollbar-color: rgba(170, 166, 166, 0.301) rgba(10, 22, 22, 0.705);
   }
 
+  #back-btn {
+      margin: auto auto 0px auto;
+  }
+
+  #recipe-btn {
+      margin: auto auto 5px auto;
+  }
+
+/*recipe scroll*/
+
+  #recipe-container {
+      scrollbar-width: thin;
+        scrollbar-color: rgba(170, 166, 166, 0.301) rgba(16, 230, 219, 0.705);
+  }
 
  /* Works on Chrome/Edge/Safari */
 
@@ -117,18 +131,14 @@ export default {
     border: 3px solid rgba(170, 166, 166, 0.301);
   }
 
-  #back-btn {
-      margin: auto auto 0px auto;
-  }
-
-  #recipe-btn {
-      margin: auto auto 5px auto;
-  }
+/* each-cocktail scroll */
 
     .each-cocktail {
         scrollbar-width: thin;
         scrollbar-color: rgba(170, 166, 166, 0.301) rgba(10, 22, 22, 0.705);
   }
+
+ /* Works on Chrome/Edge/Safari */
 
     .each-cocktail::-webkit-scrollbar  {
       width: 12px;
@@ -143,6 +153,7 @@ export default {
     border-radius: 20px;
     border: 3px solid rgba(170, 166, 166, 0.301);
   }
+  
 
   .ingredients-container {
       margin: 0.5em auto;
@@ -170,9 +181,10 @@ export default {
         }
 
         .each-cocktail {
-        width: 16em;
-        height: 17.5em;
-        margin: 0.5em;
+            width: 16em;
+            height: 27em;
+            margin: 0.5em;
+            font-size: 11px;
         }
 
         .img-cocktail {
@@ -182,11 +194,11 @@ export default {
     }
 
   @media only screen and (max-width: 400px){
-
     .each-cocktail {
       width: 82%;
-      height: 17.5em;
+      height: 27em;
       margin: 0.5em;
+      font-size: 11px;
     }
 
     .img-cocktail {
@@ -198,8 +210,13 @@ export default {
     @media only screen and (max-width: 350px){
         .each-cocktail {
             width: 90%;
-            height: 17.5em;
+            height: 27em;
             margin: 0.5em;
+            font-size: 10px;
+        }
+
+        #instructions-container {
+            font-size: 10px;
         }
 
         .img-cocktail {
