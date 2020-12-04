@@ -63,18 +63,18 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
     .each-cocktail {
-    display: flex;
-    overflow: scroll;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 16em;
-    height: 23em;
-    margin: 1em;
-    background-color: rgba(233, 222, 222, 0.13);
-    border: ridge 5px rgba(255, 255, 255, 0.514);
-    border-radius: 10px;
-    padding: 0.5em;
+        display: flex;
+        overflow: scroll;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 16em;
+        height: 23em;
+        margin: 1em;
+        background-color: rgba(233, 222, 222, 0.13);
+        border: ridge 5px rgba(255, 255, 255, 0.514);
+        border-radius: 10px;
+        padding: 0.5em;
   }
 
   .each-cocktail > * {
@@ -103,11 +103,11 @@ export default {
   }
 
   #back-btn {
-      margin: auto auto 0px auto;
+      margin: auto auto 10px auto;
   }
 
   #recipe-btn {
-      margin: auto auto 5px auto;
+      margin: auto auto 10px auto;
   }
 
 /*recipe scroll*/
