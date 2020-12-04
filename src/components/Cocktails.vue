@@ -70,6 +70,8 @@ export default {
   #cocktails-menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
     width: 80%;
     height: 80%;
     overflow: scroll;
