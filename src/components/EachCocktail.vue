@@ -38,6 +38,8 @@
             </div>
             <!-- the button lets you get back to the front of the cocktail card  -->
             <button id="back-btn" class="viewCocktail-btn" @click="toggleViewing">back</button>
+            <!--I put span to fix damn IOS devices bug with scrolling -->
+            <span></span>
         </div>
     </div>
 </template>
@@ -112,16 +114,16 @@ export default {
 
 /*recipe scroll*/
 
-  #recipe-container {
+  /* #recipe-container {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: rgba(170, 166, 166, 0.301) rgba(16, 230, 219, 0.705);
-  }
+  } */
 
  /* Works on Chrome/Edge/Safari */
 
-    #recipe-container::-webkit-scrollbar {
+    /* #recipe-container::-webkit-scrollbar {
     width: 12px;
   }
   #recipe-container::-webkit-scrollbar-track {
@@ -131,10 +133,9 @@ export default {
     background-color:rgba(10, 22, 22, 0.705);
     border-radius: 20px;
     border: 3px solid rgba(170, 166, 166, 0.301);
-  }
+  } */
 
 /* each-cocktail scroll */
-
     .each-cocktail {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;

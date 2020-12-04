@@ -22,7 +22,7 @@ export default {
       text-shadow: 2px 2px 2px white;
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em;
-      padding: 0.5em;
+      padding: 0.3em;
       margin: auto;
   }
 

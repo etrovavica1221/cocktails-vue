@@ -102,7 +102,7 @@ export default {
   .search-bar {
     display: flex;
     align-items: center;
-    margin: 0 0.5em 2em 0.5em;
+    margin: 0 0.5em 1em 0.5em;
     padding: 0.5em;
     border: 0.2em groove rgba(0, 0, 0, 0.521);
     border-radius: 6px;
