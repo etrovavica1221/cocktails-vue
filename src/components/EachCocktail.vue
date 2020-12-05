@@ -149,7 +149,7 @@ export default {
     }
 
   .ingredients-container {
-      margin: 2em auto;
+      margin: 0.5em auto;
   }
 
   #ingredients-header {
@@ -158,7 +158,7 @@ export default {
   }
 
   #instructions-container {
-      margin-bottom: 0.5em;
+      margin-bottom: 2em;
   }
 
     #cocktail-container {
