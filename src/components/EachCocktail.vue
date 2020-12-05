@@ -22,17 +22,6 @@
         <div v-else class="each-cocktail" id="recipe-container">
             <!-- rendered when 'view recipe button' is clicked  -->
             <div class="title">{{cocktail.strDrink}}</div>
-            <div class="ingredients-container">
-                <h1 id="ingredients-header">Ingredients:</h1>
-                <div v-if="cocktail.strIngredient1 !== null">- {{cocktail.strIngredient1}}</div>
-                <div v-if="cocktail.strIngredient2 !== null">- {{cocktail.strIngredient2}}</div>
-                <div v-if="cocktail.strIngredient3 !== null">- {{cocktail.strIngredient3}}</div>
-                <div v-if="cocktail.strIngredient4 !== null">- {{cocktail.strIngredient4}}</div>
-                <div v-if="cocktail.strIngredient5 !== null">- {{cocktail.strIngredient5}}</div>
-                <div v-if="cocktail.strIngredient6 !== null">- {{cocktail.strIngredient6}}</div>
-                <div v-if="cocktail.strIngredient7 !== null">- {{cocktail.strIngredient7}}</div>
-                <div v-if="cocktail.strIngredient8 !== null">- {{cocktail.strIngredient8}}</div>
-            </div>
             <div id="instructions-container">
                 {{cocktail.strInstructions}}
             </div>
@@ -160,7 +149,7 @@ export default {
     }
 
   .ingredients-container {
-      margin: 0.5em auto;
+      margin: 2em auto;
   }
 
   #ingredients-header {
