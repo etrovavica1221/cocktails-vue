@@ -125,6 +125,8 @@ export default {
   @media only screen and (min-width: 2500px){
     #cocktails-menu {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      margin: auto;
     }
 
     .search-bar {
@@ -140,6 +142,8 @@ export default {
   @media only screen and (max-width: 1200px){
     #cocktails-menu {
       grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      margin: auto;
       width: 66%;
       border: 0.9em groove rgba(0, 0, 0, 0.301);
     }
@@ -148,6 +152,8 @@ export default {
   @media only screen and (max-width: 1000px){
     #cocktails-menu {
       width: 75%;
+      justify-content: center;
+      margin: auto;
       border: 0.7em groove rgba(0, 0, 0, 0.301);
     }
   }
@@ -155,12 +161,16 @@ export default {
   @media only screen and (max-width: 900px){
     #cocktails-menu {
       width: 85%;
+      justify-content: center;
+      margin: auto;
     }
   }
 
   @media only screen and (max-width: 800px){
     #cocktails-menu {
       width: 92%;
+      justify-content: center;
+      margin: auto;
     }
   }
 
@@ -173,6 +183,8 @@ export default {
 
     #cocktails-menu {
       grid-template-columns: 1fr;
+      justify-content: center;
+      margin: auto;
       width: 89%;
       border: 0.4em groove rgba(0, 0, 0, 0.301);
     }
@@ -189,6 +201,11 @@ export default {
   }
 
   @media only screen and (max-width: 380px){
+    #cocktails-menu {
+      justify-content: center;
+      margin: auto;
+    }
+
     #cocktail-search-label {
       font-size: 0.6em;
       margin-bottom: 0.5em;
